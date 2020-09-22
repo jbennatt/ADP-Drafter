@@ -9,7 +9,7 @@ APACHE Math Commons
 jsoup (although this is no longer needed because parsing HTML is unnecessary)
 
 ## Running
-The main method is located in [/src/drafter/Draft.java](https://github.com/jbennatt/ADP-Drafter/blob/master/src/drafter/Draft.java). This is a fully functional command line program (which launches a GUI).
+The main method is located in [src/drafter/Draft.java](https://github.com/jbennatt/ADP-Drafter/blob/master/src/drafter/Draft.java). This is a fully functional command line program (which launches a GUI).
 
 You can look at the example JSON files in [adp_data](https://github.com/jbennatt/ADP-Drafter/tree/master/adp_data) but the format is specifically for JSON data from [Fantasy Football Calculator](https://fantasyfootballcalculator.com/adp) (current as of 2020).
 
