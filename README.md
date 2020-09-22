@@ -25,4 +25,4 @@ java -jar drafter.jar -p position -n numTeams -r numRounds -d numDisplays -f fil
 -f file: path to JSON file used to create ADP. DEFAULT: adp_data/2020_12_PPR.json
 ```
 
-However, if running from an IDE (which is my preferred method), it's probably easier to just modify `ADP_JSON` in `Draft.java`.
+However, if running from an IDE (which is my preferred method), it's probably easier to just modify `ADP_JSON` on line 174 of [`Draft.java`](https://github.com/jbennatt/ADP-Drafter/blob/master/src/drafter/Draft.java).
