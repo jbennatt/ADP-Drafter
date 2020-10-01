@@ -2,11 +2,14 @@
 Java Swing project project that I've used for several years to help me in my fantasy football drafts.
 
 ## Dependencies
-jackson JSON 
-
-APACHE Math Commons
-
-jsoup (although this is no longer needed because parsing HTML is unnecessary)
+* jackson JSON parsing (I'm using v2.9.6 just because I haven't updated it and, at the time, this wasn't a maven project)
+  * [jackson-databind](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind)
+  * [jackson-core](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core)
+  * [jackson-annotations](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations)
+* [APACHE Commons Math](https://mvnrepository.com/artifact/org.apache.commons/commons-math3) (v3.6.1)
+* HTML Parsing (this is deprecated and has been replaced by JSON data, but the old parsing routines are still present in the project)
+  * [HtmlUnit](https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit) (v2.27) - used to make connection to Fantasy Football Calculator ADP data.
+  * [jsoup](https://mvnrepository.com/artifact/org.jsoup/jsoup) (v1.7.2) - used to parse HTML data from Fantasy Football Calculator ADP Data. This will no longer work because it had to be updated every year and I haven't maintained it since 2017, when Fantasy Football Calculator started offereing CSV data.
 
 ## Running
 The main method is located in [src/drafter/Draft.java](https://github.com/jbennatt/ADP-Drafter/blob/master/src/drafter/Draft.java). This is a fully functional command line program (which launches a GUI).
